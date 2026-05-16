@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topbar">
+
+    <h1>🚀 Kanban Board</h1>
+
+    <div class="controls">
+
+      <input type="text"
+             id="searchInput"
+             placeholder="Search tasks...">
+
+      <button id="themeToggle">🌙</button>
+
+    </div>
+
+  </div>
+
+  <div class="board">
+
+    <!-- TO DO -->
+    <div class="column" id="todo">
+      <h2>📝 To Do</h2>
+
+      <div class="task-list"
+           ondrop="drop(event)"
+           ondragover="allowDrop(event)">
+      </div>
+
+      <button onclick="addTask('todo')">
+        + Add Task
+      </button>
+    </div>
+
+    <!-- DOING -->
+    <div class="column" id="doing">
+      <h2>⚡ Doing</h2>
+
+      <div class="task-list"
+           ondrop="drop(event)"
+           ondragover="allowDrop(event)">
+      </div>
+
+      <button onclick="addTask('doing')">
+        + Add Task
+      </button>
+    </div>
+
+    <!-- DONE -->
+    <div class="column" id="done">
+      <h2>✅ Done</h2>
+
+      <div class="task-list"
+           ondrop="drop(event)"
+           ondragover="allowDrop(event)">
+      </div>
+
+      <button onclick="addTask('done')">
+        + Add Task
+      </button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
