@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body {
+  background: #f4f7fb;
+  color: #222;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+body.dark {
+  background: #121212;
+  color: white;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+#searchInput {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 220px;
+}
+
+#themeToggle {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.board {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  min-width: 320px;
+}
